@@ -1,0 +1,59 @@
+/* General Setup */
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(135deg, #74ebd5 0%, #acb6e5 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #333;
+}
+
+/* Glassmorphism Container */
+.weather-container {
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 30px;
+    border-radius: 30px;
+    width: 350px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+[span_11](start_span)/* Animated Sun Icon[span_11](end_span) */
+.sun {
+    width: 60px;
+    height: 60px;
+    background: #FFD700;
+    border-radius: 50%;
+    margin: 20px auto;
+    box-shadow: 0 0 20px #FFD700;
+    animation: pulse 2s infinite ease-in-out;
+}
+
+@keyframes pulse {
+    0%, 100% { transform: scale(1); opacity: 1; }
+    50% { transform: scale(1.1); opacity: 0.8; }
+}
+
+[span_12](start_span)/* Forecast Card Hover Effects[span_12](end_span) */
+.forecast-card {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 10px;
+    border-radius: 15px;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.forecast-card:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.forecast-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-top: 25px;
+}

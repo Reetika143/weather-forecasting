@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherCast - Internship Task</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="weather-container">
+        <div class="search-box">
+            <input type="text" id="cityInput" placeholder="Enter city name...">
+            <button id="searchBtn">Search</button>
+        </div>
+
+        <div class="main-display" id="weatherDisplay">
+            <div class="weather-icon sun"></div> <h1 id="cityName">Mumbai</h1>
+            <p id="description">Sunny</p>
+            <div class="temp-big"><span id="temp">24</span>°C</div>
+            
+            <div class="details">
+                <div class="detail-item">
+                    <span>Humidity</span>
+                    <strong id="humidity">45%</strong>
+                </div>
+                <div class="detail-item">
+                    <span>Wind</span>
+                    <strong id="wind">12 km/h</strong>
+                </div>
+            
+            </div>
+        </div>
+
+        <div class="forecast-grid">
+            <div class="forecast-card">
+                <p>Mon</p>
+                <div class="mini-icon cloud"></div>
+                <p><strong>22°C</strong> / 18°C</p>
+            </div>
+            <div class="forecast-card">
+                <p>Tue</p>
+                <div class="mini-icon sun"></div>
+                <p><strong>25°C</strong> / 19°C</p>
+            </div>
+            <div class="forecast-card">
+                <p>Wed</p>
+                <div class="mini-icon rain"></div>
+                <p><strong>18°C</strong> / 14°C</p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
